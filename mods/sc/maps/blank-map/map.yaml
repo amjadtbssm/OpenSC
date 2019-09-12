@@ -1,0 +1,26 @@
+MapFormat: 11
+
+RequiresMod: sc
+
+Title: Shell Map
+
+Author: OpenRA Starcraft Development Team
+
+Tileset: TEMPLATE
+
+MapSize: 5,5
+
+Bounds: 1,1,1,1
+
+Visibility: Shellmap, Lobby
+
+Categories: Maps
+
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: example
+
+Actors:

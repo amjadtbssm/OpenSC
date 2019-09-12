@@ -1,0 +1,73 @@
+Metadata:
+	Title: OpenRA Starcraft
+	Version: playtest-20190825
+
+Packages:
+	.
+	$sc: sc
+	./mods/common: common
+	sc|bits
+
+MapFolders:
+	sc|maps: System
+
+Rules:
+	sc|rules.yaml
+
+TileSets:
+	sc|tileset.yaml
+
+Cursors:
+	sc|cursor.yaml
+
+Chrome:
+	sc|chrome.yaml
+
+Assemblies:
+	common|OpenRA.Mods.Common.dll
+	sc|OpenRA.Mods.SC.dll
+
+ChromeLayout:
+	sc|mainmenu.yaml
+
+Notifications:
+
+Translations:
+	sc|english.yaml
+
+Hotkeys:
+	common|hotkeys/game.yaml
+
+LoadScreen: BlankLoadScreen
+
+ServerTraits:
+	LobbyCommands
+	PlayerPinger
+	MasterServerPinger
+	LobbySettingsNotification
+
+ChromeMetrics:
+	common|metrics.yaml
+	sc|metrics.yaml
+
+Fonts:
+	Bold:
+		Font: common|FreeSansBold.ttf
+		Size: 14
+		Ascender: 11
+
+MapGrid:
+	TileSize: 32, 32
+	Type: Rectangular
+
+SpriteFormats: ShpTS
+
+SpriteSequenceFormat: DefaultSpriteSequence
+
+ModelSequenceFormat: PlaceholderModelSequence
+
+GameSpeeds:
+	default:
+		Name: Normal
+		Timestep: 40
+		OrderLatency: 3
