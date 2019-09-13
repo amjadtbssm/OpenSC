@@ -27,7 +27,7 @@ namespace OpenRA.Mods.Example.Widgets.Logic
 		}
 
 		private void DetectCD()
-        {
+		{
 			bool insertedStarcraftCD = false;
 			var drivers = DriveInfo.GetDrives();
 			foreach (var driver in drivers)
@@ -76,6 +76,6 @@ namespace OpenRA.Mods.Example.Widgets.Logic
 					onCancel: Game.Exit,
 					onConfirm: DetectCD);
 			}
-        }
+		}
 	}
 }
