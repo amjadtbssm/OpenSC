@@ -52,7 +52,8 @@ namespace OpenRA.Mods.Example.Widgets.Logic
 							}
 
 							var hash = hashBuilder.ToString();
-							if (hash == "cbb085bd0013f5aa57e5fdec743912ea92e6a9c4")
+							if (hash == "cbb085bd0013f5aa57e5fdec743912ea92e6a9c4" ||
+								hash == "8a46416e1d6bd98b83052767b05f2d41955805d0")
 							{
 								insertedStarcraftCD = true;
 							}
