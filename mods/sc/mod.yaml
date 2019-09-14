@@ -2,6 +2,8 @@ Metadata:
 	Title: OpenRA Starcraft
 	Version: playtest-20190825
 
+PackageFormats: Mpq
+
 Packages:
 	.
 	$sc: sc
