@@ -1,41 +1,41 @@
 Metadata:
-	Title: OpenRA Starcraft
+	Title: OpenSC
 	Version: playtest-20190825
 
 PackageFormats: Mpq
 
 Packages:
 	.
-	$sc: sc
+	$osc: osc
 	./mods/common: common
-	sc|bits
+	osc|bits
 
 MapFolders:
-	sc|maps: System
+	osc|maps: System
 
 Rules:
-	sc|rules.yaml
+	osc|rules.yaml
 
 TileSets:
-	sc|tileset.yaml
+	osc|tileset.yaml
 
 Cursors:
-	sc|cursor.yaml
+	osc|cursor.yaml
 
 Chrome:
-	sc|chrome.yaml
+	osc|chrome.yaml
 
 Assemblies:
 	common|OpenRA.Mods.Common.dll
-	sc|OpenRA.Mods.SC.dll
+	osc|OpenRA.Mods.OSC.dll
 
 ChromeLayout:
-	sc|mainmenu.yaml
+	osc|mainmenu.yaml
 
 Notifications:
 
 Translations:
-	sc|english.yaml
+	osc|english.yaml
 
 Hotkeys:
 	common|hotkeys/game.yaml
@@ -59,8 +59,8 @@ ChromeMetrics:
 	common|chrome/ingame-infoobjectives.yaml
 	common|chrome/ingame-infostats.yaml
 	common|chrome/ingame-menu.yaml
-	sc|chrome/ingame-observer.yaml
-	sc|chrome/ingame-player.yaml
+	osc|chrome/ingame-observer.yaml
+	osc|chrome/ingame-player.yaml
 	common|chrome/ingame-perf.yaml
 	common|chrome/ingame-debug.yaml
 	common|chrome/ingame-debuginfo.yaml
@@ -84,7 +84,7 @@ ChromeMetrics:
 	common|chrome/connection.yaml
 	common|chrome/replaybrowser.yaml
 	common|chrome/gamesave-browser.yaml
-	sc|chrome/gamesave-loading.yaml
+	osc|chrome/gamesave-loading.yaml
 	common|chrome/dropdowns.yaml
 	common|chrome/musicplayer.yaml
 	common|chrome/tooltips.yaml
@@ -93,7 +93,7 @@ ChromeMetrics:
 	common|chrome/confirmation-dialogs.yaml
 	common|chrome/editor.yaml
 	common|chrome/playerprofile.yaml
-	sc|metrics.yaml
+	osc|metrics.yaml
 
 Fonts:
 	Tiny:
