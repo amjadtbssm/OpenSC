@@ -2,19 +2,30 @@ Metadata:
 	Title: OpenSC
 	Version: playtest-20190825
 
-PackageFormats: Mpq
+PackageFormats: Mix
 
 Packages:
 	.
 	$osc: osc
 	./mods/common: common
+	~ra_sounds.mix
 	osc|bits
+	osc|bits/structures
+	osc|bits/sounds
+	osc|bits/palettes
+	osc|bits/ui
 
 MapFolders:
 	osc|maps: System
 
 Rules:
-	osc|rules.yaml
+	osc|rules/defaults.yaml
+	osc|rules/palettes.yaml
+	osc|rules/world.yaml
+	osc|rules/zergs-structures.yaml
+    
+Sequences:
+	osc|sequences/zergs-structures.yaml
 
 TileSets:
 	osc|tileset.yaml
@@ -27,29 +38,10 @@ Chrome:
 
 Assemblies:
 	common|OpenRA.Mods.Common.dll
+	common|OpenRA.Mods.Cnc.dll
 	osc|OpenRA.Mods.OSC.dll
 
 ChromeLayout:
-	osc|mainmenu.yaml
-
-Notifications:
-
-Translations:
-	osc|english.yaml
-
-Hotkeys:
-	common|hotkeys/game.yaml
-
-LoadScreen: BlankLoadScreen
-
-ServerTraits:
-	LobbyCommands
-	PlayerPinger
-	MasterServerPinger
-	LobbySettingsNotification
-
-ChromeMetrics:
-	common|metrics.yaml
 	common|chrome/ingame.yaml
 	common|chrome/ingame-chat.yaml
 	common|chrome/ingame-fmvplayer.yaml
@@ -88,11 +80,31 @@ ChromeMetrics:
 	common|chrome/dropdowns.yaml
 	common|chrome/musicplayer.yaml
 	common|chrome/tooltips.yaml
-	common|chrome/assetbrowser.yaml
+	osc|chrome/assetbrowser.yaml
 	common|chrome/missionbrowser.yaml
 	common|chrome/confirmation-dialogs.yaml
 	common|chrome/editor.yaml
 	common|chrome/playerprofile.yaml
+
+Notifications:
+	osc|audio/notifications.yaml
+
+Translations:
+	osc|english.yaml
+
+Hotkeys:
+	common|hotkeys/game.yaml
+
+LoadScreen: BlankLoadScreen
+
+ServerTraits:
+	LobbyCommands
+	PlayerPinger
+	MasterServerPinger
+	LobbySettingsNotification
+
+ChromeMetrics:
+	common|metrics.yaml
 	osc|metrics.yaml
 
 Fonts:
@@ -129,7 +141,7 @@ MapGrid:
 	TileSize: 32, 32
 	Type: Rectangular
 
-SpriteFormats: ShpTS
+SpriteFormats: ShpTS, PngSheet
 
 SpriteSequenceFormat: DefaultSpriteSequence
 

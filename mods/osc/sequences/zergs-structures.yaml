@@ -1,0 +1,12 @@
+zh:
+	Defaults:
+		AddExtension: false
+	idle: zh.png
+		Tick: 400
+		Length: 6
+        
+pn:
+	Defaults:
+		AddExtension: false
+	idle: pn.png
+		Length: 1
