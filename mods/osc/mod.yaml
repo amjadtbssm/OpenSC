@@ -8,12 +8,31 @@ Packages:
 	.
 	$osc: osc
 	./mods/common: common
-	~ra_sounds.mix
 	osc|bits
+	osc|bits/ra
+	osc|bits/ra/bits
+	osc|bits/ra/bits/desert
+	osc|bits/ra/cnc
+	osc|bits/ra/expand
 	osc|bits/structures
-	osc|bits/sounds
 	osc|bits/palettes
 	osc|bits/ui
+	~main.mix
+	~conquer.mix
+	~lores.mix: lores
+	~hires.mix
+	~local.mix
+	~sounds.mix
+	~speech.mix
+	~allies.mix
+	~russian.mix
+	~temperat.mix
+	~snow.mix
+	~interior.mix
+	~scores.mix
+	~expand2.mix
+	~hires1.mix
+	~desert.mix
 
 MapFolders:
 	osc|maps: System
@@ -21,14 +40,19 @@ MapFolders:
 Rules:
 	osc|rules/defaults.yaml
 	osc|rules/palettes.yaml
+	osc|rules/player.yaml
 	osc|rules/world.yaml
 	osc|rules/zergs-structures.yaml
     
 Sequences:
 	osc|sequences/zergs-structures.yaml
+	osc|sequences/misc.yaml
 
 TileSets:
-	osc|tileset.yaml
+	osc|tilesets/snow.yaml
+	osc|tilesets/interior.yaml
+	osc|tilesets/temperat.yaml
+	osc|tilesets/desert.yaml
 
 Cursors:
 	osc|cursor.yaml
@@ -141,11 +165,18 @@ MapGrid:
 	TileSize: 32, 32
 	Type: Rectangular
 
-SpriteFormats: ShpTS, PngSheet
+SpriteFormats: ShpD2, ShpTD, TmpRA, TmpTD, ShpTS, PngSheet
 
-SpriteSequenceFormat: DefaultSpriteSequence
+SpriteSequenceFormat: TilesetSpecificSpriteSequence
+	TilesetExtensions:
+		TEMPERAT: .tem
+		SNOW: .sno
+		INTERIOR: .int
+		DESERT: .des
 
 ModelSequenceFormat: PlaceholderModelSequence
+
+SoundFormats: Aud, Wav
 
 GameSpeeds:
 	default:

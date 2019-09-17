@@ -1,10 +1,14 @@
-World:
+^BaseWorld:
 	Inherits: ^Palettes
-	TerrainRenderer:
 	AlwaysVisible:
 	ActorMap:
 	ScreenMap:
-	LoadWidgetAtGameStart:
+	Selection:
+	MusicPlaylist:
+		VictoryMusic: score
+		DefeatMusic: map
+	TerrainGeometryOverlay:
+	DebugVisualizations:
 	Locomotor@FOOT:
 		Name: foot
 		Crushes: crate
@@ -101,29 +105,60 @@ World:
 			Ore: 50
 			Gems: 50
 			Water: 100
-	Faction@0:
-		Name: Example
-		InternalName: example
-		Side: Example
-		Selectable: False
+	TerrainRenderer:
+	Faction@random:
+		Name: Random
+		InternalName: Random
+		RandomFactionMembers: random-zergs
+		Side: Randoms
+	Faction@random-zergs:
+		Name: Random Zergs
+		InternalName: random-zergs
+		Side: Randoms
+	Faction@1:
+		Name: Zergs
+		InternalName: zergs
+		Side: Random Zergs
+	ResourceType@ore:
+		Type: Ore
+		Name: Valuable Minerals
+		PipColor: Yellow
+		ResourceType: 1
+		TerrainType: Ore
+		Palette: player
+		Sequences: gold01,gold02,gold03,gold04
+		MaxDensity: 12
+		ValuePerUnit: 25
+		AllowedTerrainTypes: Clear,Road
+		AllowUnderActors: true
+	ResourceType@gem:
+		Type: Gems
+		Name: Valuable Minerals
+		PipColor: Red
+		ResourceType: 2
+		TerrainType: Gems
+		Palette: player
+		Sequences: gem01,gem02,gem03,gem04
+		MaxDensity: 3
+		ValuePerUnit: 50
+		AllowedTerrainTypes: Clear,Road
+		AllowUnderActors: true
+
+World:
+	Inherits: ^BaseWorld
+	ChatCommands:
+	DevCommands:
+	DebugVisualizationCommands:
+	PlayerCommands:
+	HelpCommand:
+	ScreenShaker:
+	BuildingInfluence:
+	LoadWidgetAtGameStart:
+
+EditorWorld:
+	Inherits: ^BaseWorld
+	EditorActorLayer:
+	EditorResourceLayer:
+	EditorSelectionLayer:
+	LoadWidgetAtGameStart:
 	Selection:
-	MusicPlaylist:
-
-DummyActor:
-	BodyOrientation:
-	HitShape:
-	AlwaysVisible:
-
-Player:
-	AlwaysVisible:
-	TechTree:
-	PlaceBuilding:
-	SupportPowerManager:
-	PlayerResources:
-	DeveloperMode:
-	Shroud:
-	FrozenActorLayer:
-
-EditorPlayer:
-	AlwaysVisible:
-	Shroud:
