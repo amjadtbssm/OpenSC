@@ -12,7 +12,7 @@ MapSize: 130,130
 
 Bounds: 1,1,128,128
 
-Visibility: Shellmap, Lobby
+Visibility: Lobby, Shellmap
 
 Categories: Maps
 
@@ -28,5 +28,18 @@ Players:
 		Faction: Random
 
 Actors:
-
-Rules:
+	Actor0: zh
+		Owner: Neutral
+		Location: 52,60
+	Actor1: zh
+		Owner: Neutral
+		Location: 66,60
+	Actor2: zh
+		Owner: Neutral
+		Location: 59,67
+	Actor3: zh
+		Owner: Neutral
+		Location: 51,73
+	Actor4: zh
+		Owner: Neutral
+		Location: 66,74

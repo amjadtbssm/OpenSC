@@ -162,7 +162,7 @@ Fonts:
 		Ascender: 18
 
 MapGrid:
-	TileSize: 32, 32
+	TileSize: 24,24
 	Type: Rectangular
 
 SpriteFormats: ShpD2, ShpTD, TmpRA, TmpTD, ShpTS, PngSheet
