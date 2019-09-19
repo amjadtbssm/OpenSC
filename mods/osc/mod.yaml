@@ -17,6 +17,7 @@ Packages:
 	osc|bits/structures
 	osc|bits/palettes
 	osc|bits/ui
+	osc|bits/units
 	~main.mix
 	~conquer.mix
 	~lores.mix: lores
@@ -42,10 +43,12 @@ Rules:
 	osc|rules/palettes.yaml
 	osc|rules/player.yaml
 	osc|rules/world.yaml
-	osc|rules/zergs-structures.yaml
+	osc|rules/dominature-structures.yaml
+	osc|rules/dominature-units.yaml
     
 Sequences:
-	osc|sequences/zergs-structures.yaml
+	osc|sequences/dominature-structures.yaml
+	osc|sequences/dominature-units.yaml
 	osc|sequences/misc.yaml
 
 TileSets:

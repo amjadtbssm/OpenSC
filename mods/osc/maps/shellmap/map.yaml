@@ -6,7 +6,7 @@ Title: Shell Map
 
 Author: OpenSC Development Team
 
-Tileset: SNOW
+Tileset: DESERT
 
 MapSize: 130,130
 
@@ -28,18 +28,3 @@ Players:
 		Faction: Random
 
 Actors:
-	Actor0: zh
-		Owner: Neutral
-		Location: 52,60
-	Actor1: zh
-		Owner: Neutral
-		Location: 66,60
-	Actor2: zh
-		Owner: Neutral
-		Location: 59,67
-	Actor3: zh
-		Owner: Neutral
-		Location: 51,73
-	Actor4: zh
-		Owner: Neutral
-		Location: 66,74

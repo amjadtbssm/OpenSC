@@ -109,16 +109,24 @@
 	Faction@random:
 		Name: Random
 		InternalName: Random
-		RandomFactionMembers: random-zergs
+		RandomFactionMembers: random-dominatures
 		Side: Randoms
-	Faction@random-zergs:
-		Name: Random Zergs
-		InternalName: random-zergs
+	Faction@random-dominatures:
+		Name: Dominatures
+		InternalName: random-dominatures
+		Side: Randoms
+	Faction@random-thinking-plants:
+		Name: Thinking Plants
+		InternalName: random-thinking-plants
 		Side: Randoms
 	Faction@1:
-		Name: Zergs
-		InternalName: zergs
-		Side: Random Zergs
+		Name: Dominature
+		InternalName: dominature
+		Side: Dominatures
+	Faction@2:
+		Name: Thinking Plant
+		InternalName: thinking-plant
+		Side: Thinking Plants
 	ResourceType@ore:
 		Type: Ore
 		Name: Valuable Minerals

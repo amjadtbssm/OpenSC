@@ -1,0 +1,61 @@
+larva:
+	idle:
+		Combine:
+			zl.png:
+				Start: 0
+				Length: 2
+			zl.png:
+				Start: 2
+				Length: 2
+			zl.png:
+				Start: 4
+				Length: 2
+			zl.png:
+				Start: 6
+ 				Length: 2
+			zl.png:
+				Start: 8
+				Length: 2
+			zl.png:
+				Start: 10
+				Length: 2
+			zl.png:
+				Start: 12
+				Length: 2
+			zl.png:
+				Start: 14
+				Length: 2
+			zl.png:
+ 				Start: 14
+				Length: 2
+				FlipX: true
+			zl.png:
+				Start: 12
+				Length: 2
+				FlipX: true
+			zl.png:
+				Start: 10
+				Length: 2
+				FlipX: true
+			zl.png:
+				Start: 8
+				Length: 2
+				FlipX: true
+			zl.png:
+				Start: 6
+				Length: 2
+				FlipX: true
+			zl.png:
+				Start: 5
+				Length: 2
+				FlipX: true
+			zl.png:
+				Start: 4
+				Length: 2
+				FlipX: true
+			zl.png:
+				Start: 2
+				Length: 2
+				FlipX: true
+		Frames: 0, 1
+		Facings: -16
