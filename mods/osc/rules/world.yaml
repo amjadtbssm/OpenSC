@@ -1,12 +1,11 @@
 ^BaseWorld:
 	Inherits: ^Palettes
 	AlwaysVisible:
-	ActorMap:
-	ScreenMap:
-	Selection:
 	MusicPlaylist:
 		VictoryMusic: score
-		DefeatMusic: map
+		DefeatMusic: score
+	ActorMap:
+	ScreenMap:
 	TerrainGeometryOverlay:
 	DebugVisualizations:
 	Locomotor@FOOT:
@@ -105,28 +104,34 @@
 			Ore: 50
 			Gems: 50
 			Water: 100
-	TerrainRenderer:
+	#ShroudRenderer:
+	#	Index: 255, 16, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240, 20, 40, 56, 65, 97, 130, 148, 194, 24, 33, 66, 132, 28, 41, 67, 134, 1, 2, 4, 8, 3, 6, 12, 9, 7, 14, 13, 11, 5, 10, 15, 255
+	#	UseExtendedIndex: true
+	#	FogPalette: shroud
+	#	ShroudPalette: shroud
 	Faction@random:
 		Name: Random
-		InternalName: Random
-		RandomFactionMembers: random-dominatures
+		InternalName: random
+		RandomFactionMembers: random-dominatures, random-thinking-plants
 		Side: Randoms
-	Faction@random-dominatures:
+	Faction@dominatures:
 		Name: Dominatures
 		InternalName: random-dominatures
+		RandomFactionMembers: dominature
 		Side: Randoms
-	Faction@random-thinking-plants:
-		Name: Thinking Plants
+	Faction@thinking-plants:
+		Name: Thinking-Plants
 		InternalName: random-thinking-plants
+		RandomFactionMembers: thinking-plant
 		Side: Randoms
 	Faction@1:
 		Name: Dominature
 		InternalName: dominature
 		Side: Dominatures
 	Faction@2:
-		Name: Thinking Plant
+		Name: Thinking-Plant
 		InternalName: thinking-plant
-		Side: Thinking Plants
+		Side: Thinking-Plants
 	ResourceType@ore:
 		Type: Ore
 		Name: Valuable Minerals
@@ -151,6 +156,7 @@
 		ValuePerUnit: 50
 		AllowedTerrainTypes: Clear,Road
 		AllowUnderActors: true
+	TerrainRenderer:
 
 World:
 	Inherits: ^BaseWorld
@@ -161,7 +167,40 @@ World:
 	HelpCommand:
 	ScreenShaker:
 	BuildingInfluence:
+	ProductionQueueFromSelection:
+		ProductionPaletteWidget: PRODUCTION_PALETTE
+	DomainIndex:
+	ResourceLayer:
+	ResourceClaimLayer:
+	BridgeLayer:
+	WarheadDebugOverlay:
+	SpawnMapActors:
+	MapBuildRadius:
+		AllyBuildRadiusCheckboxDisplayOrder: 4
+		BuildRadiusCheckboxVisible: false
+	MapOptions:
+		ShortGameCheckboxDisplayOrder: 2
+		TechLevelDropdownDisplayOrder: 2
+		GameSpeedDropdownDisplayOrder: 3
+	CreateMPPlayers:
+	MPStartUnits@dummy:
+		Class: none
+		ClassName: MCV Only
+		Factions: dominature
+		BaseActor: zh
+	SpawnMPUnits:
+	PathFinder:
+	ValidateOrder:
+	DebugPauseState:
+	RadarPings:
+	StartGameNotification:
+	ObjectivesPanel:
+		PanelName: SKIRMISH_STATS
 	LoadWidgetAtGameStart:
+	#CliffBackImpassabilityLayer:
+	TimeLimitManager:
+	Selection:
+	MPStartLocations:
 
 EditorWorld:
 	Inherits: ^BaseWorld

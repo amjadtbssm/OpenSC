@@ -6,6 +6,7 @@ PackageFormats: Mix
 
 Packages:
 	.
+	$ra: ra
 	$osc: osc
 	./mods/common: common
 	osc|bits
@@ -14,8 +15,9 @@ Packages:
 	osc|bits/ra/bits/desert
 	osc|bits/ra/cnc
 	osc|bits/ra/expand
-	osc|bits/structures
 	osc|bits/palettes
+	osc|bits/structures
+	osc|bits/tileset
 	osc|bits/ui
 	osc|bits/units
 	~main.mix

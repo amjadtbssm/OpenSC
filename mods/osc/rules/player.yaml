@@ -138,10 +138,5 @@ Player:
 		Id: unrestricted
 	GrantConditionOnPrerequisiteManager:
 	EnemyWatcher:
-	VeteranProductionIconOverlay:
-		Image: cameo-chevron
-		Sequence: idle
-		Palette: cameo-chevron
 	PlayerExperience:
-	ConditionManager:
 	GameSaveViewportManager:
