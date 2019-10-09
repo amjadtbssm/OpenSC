@@ -24,3 +24,9 @@ resources:
 shroud:
 	shroud: shadow
 		Length: *
+
+allyrepair:
+	repair:
+		Length: *
+		Tick: 160
+		ZOffset: 2047

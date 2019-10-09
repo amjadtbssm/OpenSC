@@ -30,7 +30,7 @@ dhatchery:
 	Power:
 		Amount: 0
 	SeedsResource:
-		ResourceType: Grass
+		ResourceType: Ore
 		Interval: 5
 	RenderSprites:
 		Scale: 0.6

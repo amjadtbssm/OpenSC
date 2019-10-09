@@ -28,3 +28,15 @@ Players:
 		Faction: Random
 
 Actors:
+	Actor4: dhatchery
+		Owner: Neutral
+		Location: 68,61
+	Actor7: dhatchery
+		Owner: Neutral
+		Location: 58,61
+	Actor5: dhatchery
+		Owner: Neutral
+		Location: 68,69
+	Actor3: dhatchery
+		Owner: Neutral
+		Location: 58,69
