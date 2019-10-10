@@ -19,6 +19,11 @@
 		Tileset: DESERT
 		Filename: desert.pal
 		ShadowIndex: 3, 4
+	PaletteFromFile@terrain-light-grass:
+		Name: terrain
+		Tileset: LIGHT-GRASS
+		Filename: temperat.pal
+		ShadowIndex: 3, 4
 	PaletteFromFile:
 		Name: terrain
 		Tileset: TEMPLATE

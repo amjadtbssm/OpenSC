@@ -12,6 +12,7 @@ resources:
 		TilesetOverrides:
 			INTERIOR: TEMPERAT
 			DESERT: TEMPERAT
+			LIGHT-GRASS: TEMPERAT
 	gold01: gold01
 	gold02: gold02
 	gold03: gold03

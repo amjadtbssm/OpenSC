@@ -58,6 +58,7 @@ TileSets:
 	osc|tilesets/interior.yaml
 	osc|tilesets/temperat.yaml
 	osc|tilesets/desert.yaml
+	osc|tilesets/light-grass.yaml
 
 Cursors:
 	osc|cursor.yaml
@@ -178,6 +179,7 @@ SpriteSequenceFormat: TilesetSpecificSpriteSequence
 		SNOW: .sno
 		INTERIOR: .int
 		DESERT: .des
+		LIGHT-GRASS: .png
 
 ModelSequenceFormat: PlaceholderModelSequence
 
